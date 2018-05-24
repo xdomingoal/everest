@@ -1,0 +1,15 @@
+Package: everest
+Type: Package
+Title: Annotation and Identification in LC/MS-Based Untargeted Metabolomics
+Version: 0.3.0
+Date: 2018-4-2
+Author: Xavier Domingo-Almenara
+Imports: HiClimR, igraph, XML, methods
+Suggests: R.rsp, xcms, mzR
+Maintainer: Xavier Domingo-Almenara <xdomingo@scripps.edu>
+Description: Automated.
+License: GPL (>= 2)
+URL: http://yaneslab.com
+Repository: CRAN
+LazyData: yes
+VignetteBuilder: R.rsp

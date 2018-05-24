@@ -1,0 +1,20 @@
+source("/Users/xavidomingo/Google Drive/Xavi-server/Packages/everest/data/zzz.R")
+load('annRules.rda')
+annRules
+source("/Users/xavidomingo/Google Drive/Xavi-server/Packages/everest/data/zzz.R")
+load('hmdb.rda')
+str(hmdb[[1]])
+str(hmdb@database[[1]])
+length(hmdb)
+length(hmdb@database)
+load('hmdb.rda')
+length(hmdb@database)
+str(hmdb@database[[1]])
+str(hmdb@database[[129]])
+str(hmdb@database[[503]])
+str(hmdb@database[[5203]])
+source("/Users/xavidomingo/Google Drive/Xavi-server/Packages/everest/data/rafaEverest.R")
+load('annRules.rda')
+everestRules <- annRules
+save(everestRules, file='everestRules.rda')
+everestRules

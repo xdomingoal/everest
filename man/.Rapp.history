@@ -1,0 +1,16 @@
+source("/Users/xavidomingo/Google Drive/Xavi-server/Packages/everest/man/annRules.Rd")
+osd:::normalize
+?fastCor
+??fastCor
+xcms:::getEIC
+showMethods("getEIC")
+xcms::.hasSlot
+.hasSlot
+sampclass
+xcms:::sampclass
+xcms::scanrange
+xcms::mslevel
+filepaths
+xcms::filepaths
+source("/Users/xavidomingo/Google Drive/Xavi-server/Packages/everest/man/evAnnotate.Rd")
+source("/Users/xavidomingo/Google Drive/Xavi-server/Packages/everest/man/everestRules.Rd")

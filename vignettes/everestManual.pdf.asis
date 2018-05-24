@@ -1,0 +1,29 @@
+
+%\VignetteIndexEntry{Everest Manual}
+%\VignetteEngine{R.rsp::asis}
+%\VignetteKeyword{PDF}
+%\VignetteKeyword{everest}
+%\VignetteKeyword{vignette}
+%\VignetteKeyword{package}
+
+# Loadlibrary(everest)
+
+
+## Section 2 of the manual
+
+# Load table (CSV)feature.table <- read.csv2("featureTable.csv")# Load table (tab delim TSV file)feature.table <- read.delim("featureTable.tsv")# Or an XLSX file:feature.table <- read.xlsx("featureTable.xlsx")# Make sure that it looks OK by taking a quick look:head(feature.table)
+
+
+## Section 3.1 of the manual.
+
+# Download the feature table (if not downloaded manually before): download.file("https://github.com/xdomingoal/everest-data/raw/master/MTBLS20.tsv", "MTBLS20.tsv")# Load the table (we have to remove the first column of the table, as explained be- fore):feature.table <- read.delim("featureTable.tsv")[,-1]# Annotateex <- evAnnotate(data.table = feature.table, ion.mode = "pos",min.correlation = 0.7, max.time.dist = 2, ppm.error = 20)
+
+
+# Access the annotation results:anTab <- annoTable(ex)# Write the table as an excel file:
+require(openxlsx)write.xlsx(anTab, file = "results.xlsx")
+
+
+# Annotate an xset3 object from XCMSex <- evAnnotate(xcmsSet = xset3, ion.mode = "pos",min.correlation = 0.7, max.time.dist = 2, ppm.error = 20)
+## Secion 3.2 of the manual
+
+showAn(ex, "M170T276_8")

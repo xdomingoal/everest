@@ -1,0 +1,13 @@
+#exportPattern("^[[:alpha:]]+")
+
+importFrom("igraph", "graph.data.frame", "clusters")
+importFrom("HiClimR", "fastCor")
+importFrom("utils", "getTxtProgressBar", "read.csv","setTxtProgressBar", "txtProgressBar", "write.table")
+importFrom("methods", "new", ".hasSlot")
+importFrom("stats", "coefficients", "cor", "cov", "dist", "dnorm",
+             "fft", "na.omit", "prcomp", "runmed", "sd")
+
+
+export(evAnnotate, showAn, annoTable)
+
+exportClasses(MetaboSet)
