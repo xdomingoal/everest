@@ -13,7 +13,7 @@
 \\___/|___/\\___/_/   \\___/____/\\__/          Version ", currVersion, "
 
  - Type 'citation('everest')' for citing this R package in publications. 
- - Type 'vignette('everestTutorial', package='everest')' for a tutorial on Everest's usage. 
+ - Type 'vignette('everestManual', package='everest')' for a tutorial on Everest's usage. 
  - For bugs, problems and issues, please do not hesitate in contacting xdomingo@scripps.edu.    
     ")
                                       
